@@ -40,7 +40,7 @@ content-type: application/json
 ###
 
 # Get roll history
-GET {{dice_api_host}}/rolls/history?max=8&sides=6
+GET {{dice_api_host}}/rolls/history?max=10&sides=6
 
 ##################################################################
 # Gateway API
