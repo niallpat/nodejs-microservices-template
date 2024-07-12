@@ -44,7 +44,7 @@ export class RollsController {
   async getRollsHistory(
     //use @QUERY() decorator to get the query parameters of the request and validate then.
     @Query('max', new DefaultValuePipe(10), ParseIntPipe) max: number,
-    @Query('sides', new DefaultValuePipe(6), ParseIntPipe) sides: number
+    @Query('sides', new DefaultValuePipe(6), ParseIntPipe) sides: number,
   ) {
     //finally, retrieve the last rolls from the database, return the restuls as an array of numbers.
     this.logger.log(`Retrieving last ${max} rolls history [sides: ${sides}]`);

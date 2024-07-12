@@ -31,8 +31,8 @@ content-type: application/json
 # Dice API
 ##################################################################
 
-# Roll dice
-POST {{dice_api_host}}/rolls
+# Roll dice'
+POST {{dice_api_host}}/rolls`[3]9
 content-type: application/json
 
 { "sides": 6 }
